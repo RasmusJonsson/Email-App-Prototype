@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Inbox"
+        app:showAsAction="never"/>
+    <item
+
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Starred"
+        app:showAsAction="ifRoom"/>
+    <item
+
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Important"
+        app:showAsAction="ifRoom"/>
+    <item
+
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Sent Email"
+        app:showAsAction="ifRoom"/>
+    <item
+
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Drafts"
+        app:showAsAction="ifRoom"/>
+    <item
+
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Thrash"
+        app:showAsAction="ifRoom"/>
+    <item
+
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Label 1"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Label 2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Label 3"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="Label 4"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+
+
+</menu>

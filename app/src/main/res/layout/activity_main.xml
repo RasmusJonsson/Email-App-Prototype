@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:weightSum="1"
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:text="@string/gmail"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageButton
+                android:id="@+id/newMailButton"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:src="@drawable/ic_add_box_black_24dp"
+                android:background="@color/headerColor"/>
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:src="@drawable/ic_search_black_24dp"
+                android:background="@color/headerColor" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:openDrawer="start"
+        style="@style/Widget.AppCompat.ListMenuView">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:elevation="6dp"
+                style="@style/Widget.Design.TabLayout"
+                android:minHeight="?attr/actionBarSize" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/action_menu" />
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
